@@ -5,8 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3dmExtractor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="526" Width="922">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="326*"/>
+            <RowDefinition Height="102*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="267*"/>
+            <ColumnDefinition Width="288*"/>
+            <ColumnDefinition Width="280*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="46,1,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="311" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="138,0,0,0" VerticalAlignment="Top" Width="75" Height="20" Grid.Column="2" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="46,15,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="311" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="138,14,0,0" VerticalAlignment="Top" Width="75" Height="20" Grid.Column="2" Grid.Row="3"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="0,2,0,0" VerticalAlignment="Top" Height="26" Width="38" Grid.Column="1" Grid.Row="1"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="0,16,0,0" VerticalAlignment="Top" Height="26" Width="38" Grid.Column="1" Grid.Row="3"/>
+        <ListBox HorizontalAlignment="Left" Height="272" Margin="2,32,0,0" VerticalAlignment="Top" Width="236" Grid.Column="1" Grid.Row="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="2,4,0,0" VerticalAlignment="Top" Height="26" Width="38" Grid.Column="1" Grid.Row="2"/>
+        <ListBox HorizontalAlignment="Left" Height="272" Margin="24,32,0,0" VerticalAlignment="Top" Width="236" Grid.Column="2" Grid.Row="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="24,4,0,0" VerticalAlignment="Top" Height="26" Width="38" Grid.Column="2" Grid.Row="2"/>
+        <StatusBar Margin="10,80,0,0" Grid.ColumnSpan="4" Grid.Row="3">
+            <ProgressBar Height="10" Width="100"/>
+            <TextBlock TextWrapping="Wrap" Text="TextBlock" Height="14" Width="361"/>
+        </StatusBar>
+        <RichTextBox HorizontalAlignment="Left" Height="272" Margin="34,32,0,0" VerticalAlignment="Top" Width="222" Grid.Column="3" Grid.Row="2">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="34,4,0,0" VerticalAlignment="Top" Height="26" Width="38" Grid.Column="3" Grid.Row="2"/>
+
     </Grid>
 </Window>

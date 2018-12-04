@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Rhino
 
 namespace _3dmExtractor
 {
@@ -20,6 +21,12 @@ namespace _3dmExtractor
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public Rhino.FileIO.File3dm RefModel;
+        public string ReadPath;
+        public string WritePath;
+        public string PreferencesPath;
+
         public MainWindow()
         {
             InitializeComponent();
